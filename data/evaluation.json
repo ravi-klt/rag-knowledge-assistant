@@ -1,0 +1,22 @@
+[
+  {
+    "query": "What caused the payment service HTTP 500 error?",
+    "expected_incident_id": "INC-1002"
+  },
+  {
+    "query": "What caused the downstream provider timeout in ticketing?",
+    "expected_incident_id": "INC-1001"
+  },
+  {
+    "query": "Why could masterdata not connect to its database?",
+    "expected_incident_id": "INC-1003"
+  },
+  {
+    "query": "Why did the e-ticket API return no items?",
+    "expected_incident_id": "INC-1004"
+  },
+  {
+    "query": "Pricing service failed because certificate expired",
+    "expected_incident_id": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "INC-1001",
+    "title": "E-ticket detail request timeout",
+    "source": "historical-incidents",
+    "text": "Ticketing service failed while calling the downstream provider for e-ticket details. Error: downstream provider timed out. Root cause: a provider connectivity issue caused request timeouts. Resolution: provider connectivity was restored and ticketing service pods were restarted."
+  },
+  {
+    "id": "INC-1002",
+    "title": "Payment API returned HTTP 500",
+    "source": "historical-incidents",
+    "text": "Payment service requests failed during database access with HTTP 500. Error: unable to acquire database connection. Root cause: the database connection pool was exhausted. Resolution: the connection pool configuration was increased and the payment service was restarted."
+  },
+  {
+    "id": "INC-1003",
+    "title": "Masterdata connection unavailable",
+    "source": "historical-incidents",
+    "text": "Masterdata service could not connect to its downstream database. Error: connection unavailable. Root cause: the database endpoint was temporarily unavailable. Resolution: database connectivity was restored and the application recovered."
+  },
+  {
+    "id": "INC-1004",
+    "title": "No e-ticket found",
+    "source": "historical-incidents",
+    "text": "The e-ticket detail API returned no items for the supplied input. Error: NO ITEMS FOUND FOR SPECIFIED INPUT. Root cause: the requested e-ticket information was not available in the downstream system. Resolution: ticket details were validated and the downstream request input was corrected."
+  }
+]
